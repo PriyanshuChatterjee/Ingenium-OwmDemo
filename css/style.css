@@ -1,0 +1,413 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Navbar: Logo and Image */
+#logo{
+    margin: 4px 12px;
+}
+
+#logo img{
+    height: 52px;
+    margin: 3px 5px; 
+}
+
+/* Navbar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Chettan 2', cursive;
+    /* font-size: 60px; */
+    padding-right: 180px;
+    padding-left: 130px;
+    margin-bottom: 0.4rem;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 19px;
+    border-radius: 20px;
+    text-decoration: none;
+} 
+#navbar ul li a:hover{
+    color: rgb(91, 204, 248);
+    
+} 
+#subscribe{
+    width: 170px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+#subscribe a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Carousel section */
+.carousel{
+    z-index: 0;
+}
+.carousel-item{
+    height: 55rem;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    right: 0;
+    padding-bottom: 150px;
+}
+
+
+.carousel-caption{
+    padding-bottom: 400px;
+}
+.carousel-caption h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 5.5rem;
+}
+.carousel-caption p{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.d-block{
+    opacity: 0.8;
+    height: 55rem;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.btn-primary{
+    background-color: rgb(58, 153, 190);
+    border-radius: 23px;
+    z-index: 1;
+}
+.btn-primary:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* Prayukti Section */
+.clearfix{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    padding: 96px 205px;
+}
+.clearfix img{
+    padding-top: 80px;
+    padding-left: 117px;
+    padding-bottom: 80px;
+    padding-right: 30px;
+    /* width: auto; */
+}
+.right{
+    float: right;
+    padding-top: 80px;
+    padding-left: 6px;
+    padding-bottom: 80px;
+    padding-right: 118px;
+    width: 33%;
+}
+/* .right{
+    float: left;
+    padding-top: 80px;
+    padding-left: 6px;
+    padding-bottom: 80px;
+    padding-right: 118px;
+    width: 33%;
+} */
+.right h2{
+    color: rgb(58, 153, 190);
+}
+.right h5{
+    color: rgb(58, 153, 190);
+}
+.b_prayukti{
+    background-color: rgb(17, 187, 199);
+    width: 55%;
+    color: white;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    justify-content: center;
+    transition: width, height, border-radius, font-size, background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.b_prayukti:hover{
+    background-color: rgb(216, 216, 216);
+    text-decoration: none;
+    width: 75%;
+    height: 12%;
+    font-size: 1.3rem;
+    border-radius: 34px;
+    color: rgb(37, 37, 37);
+    justify-content: center;
+}
+.g_btn-con{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 54px;
+    
+}
+.g_btn{
+    width: 10%;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    justify-content: center;
+    transition: width, height, border-radius, font-size, background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.g_btn:hover{
+    background-color: rgb(255, 144, 52);
+    text-decoration: none;
+    width: 15%;
+    height: 12%;
+    font-size: 1.3rem;
+    border-radius: 34px;
+    color: rgb(39, 39, 39);
+    justify-content: center;
+}
+
+/* Abohoman Section */
+.abohomanB{
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width:25%;
+}
+
+.gallery-container{
+    background-color: rgb(163, 255, 243);
+
+}
+.home-about {
+    padding: 4em 0;
+    max-width: 65%;
+    margin: 0 auto;
+}
+.home-about h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.home-about h4{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+  
+.columns {
+    display: flex;
+}
+  
+.col {
+    flex: 0 0 0%;
+    border: 3px solid rgb(131, 131, 131);
+}
+
+.col + .col {
+    margin-left: 1.5em;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
+/* Prayukti & Abohoman section */
+.more-stuff-grid {
+    background: #f4f4f4;
+    background-color: rgb(41, 40, 51);
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+}
+.more-stuff-grid h2{
+    color: rgb(17, 187, 199);
+}
+.more-stuff-grid h5{
+    color: rgb(194, 206, 207);
+}
+.more-stuff-grid p{
+    color: rgb(194, 206, 207);
+}
+/* .more-stuff-grid img{
+} */
+.from-left {
+    grid-column: 2 / 3;
+    padding: 45px 0px;
+    transform: translateX(-70%);
+}
+
+.from-right {
+    grid-column: 3 / 4;
+    padding: 45px 0px;
+    transform: translateX(+70%);
+}
+
+.from-left,
+.from-right{
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Style the form element with a border around it */
+/* form {
+    border: 4px solid #f1f1f1;
+} */
+  
+  /* Add some padding and a grey background color to containers */
+/* .news-container {
+    padding: 20px;
+    background-color: #f1f1f1;
+} */
+  
+  /* Style the input elements and the submit button */
+/* input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+  /* Add margins to the checkbox */
+/* input[type=checkbox] {
+    margin-top: 16px;
+} */
+  
+  /* Style the submit button */
+/* input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+} */ 
+
+.newsletter{
+    background-color: rgb(6, 36, 65);
+}
+.rows {
+    height: 100vh
+}
+.mt-3{
+    display: flex;
+    height: 5rem;
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-size: 1.2rem;
+    width: 69%;
+    padding-left: 251px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: calc(1.5em + .75rem + 2px);
+    padding: .575rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 52px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.card {
+    padding: 20px;
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f9a826;
+    outline: 0;
+    box-shadow: none
+}
+
+.border-rad {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    color: #fff;
+    background-color: #f9a826;
+    border-color: #f9a826
+}
+
+.border-rad:hover {
+    background-color: #f9a826;
+    border-color: #f9a826
+}
