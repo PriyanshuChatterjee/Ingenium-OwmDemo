@@ -193,7 +193,6 @@ body{
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    padding-bottom: 54px;
     
 }
 .g_btn{
@@ -229,7 +228,7 @@ body{
 
 .gallery-container{
     background-color: rgb(163, 255, 243);
-
+    height: 48rem;
 }
 .home-about {
     padding: 4em 0;
