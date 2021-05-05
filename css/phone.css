@@ -1,0 +1,7 @@
+
+
+/* Gallery */
+.columns{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
